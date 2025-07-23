@@ -1,0 +1,6 @@
+# Permitir a todos los robots de los motores de búsqueda
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://consulta.amarredeamorfuertes.com/sitemap.xml

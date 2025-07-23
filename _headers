@@ -1,0 +1,26 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://kit.fontawesome.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://kit-free.fontawesome.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com; frame-src 'self'
+  X-XSS-Protection: 1; mode=block
+  Cache-Control: public, max-age=3600
+
+/styles.css
+  Cache-Control: public, max-age=86400
+
+/whatsapp-fix.css
+  Cache-Control: public, max-age=86400
+
+/script.js
+  Cache-Control: public, max-age=86400
+
+/*.jpg
+  Cache-Control: public, max-age=604800
+
+/*.png
+  Cache-Control: public, max-age=604800
+
+/*.mp4
+  Cache-Control: public, max-age=604800

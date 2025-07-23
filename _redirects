@@ -1,0 +1,9 @@
+# Redireccionar HTTP a HTTPS
+http://:project.pages.dev/* https://:project.pages.dev/:splat 301!
+http://consulta.amarredeamorfuertes.com/* https://consulta.amarredeamorfuertes.com/:splat 301!
+
+# Redireccionar www a non-www (cuando esté en un dominio personalizado)
+http://www.:project.pages.dev/* https://:project.pages.dev/:splat 301!
+https://www.:project.pages.dev/* https://:project.pages.dev/:splat 301!
+http://www.consulta.amarredeamorfuertes.com/* https://consulta.amarredeamorfuertes.com/:splat 301!
+https://www.consulta.amarredeamorfuertes.com/* https://consulta.amarredeamorfuertes.com/:splat 301!

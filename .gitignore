@@ -33,3 +33,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Cloudflare específico
+.wrangler/
+.cloudflare/
+dist/
+.dev.vars

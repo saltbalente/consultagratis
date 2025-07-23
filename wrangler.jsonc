@@ -1,0 +1,33 @@
+{
+  "name": "consultagratis",
+  "compatibility_date": "2025-07-23",
+  "main": "./.cloudflare/workers-site.js",
+  "assets": {
+    "directory": "./",
+    "browser_TTL": 86400,
+    "serve_single_page_app": true
+  },
+  "site": {
+    "bucket": "./",
+    "entry-point": "./index.html"
+  },
+  "triggers": {
+    "crons": []
+  },
+  "send_metrics": false,
+  "route": "consulta.amarredeamorfuertes.com/*",
+  "custom_domain": "consulta.amarredeamorfuertes.com",
+  "workers_dev": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": ["**/*.js"]
+    }
+  ],
+  "miniflare": {
+    "kv": [],
+    "durable_objects": [],
+    "r2_buckets": [],
+    "d1_databases": []
+  }
+}
