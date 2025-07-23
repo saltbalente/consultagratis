@@ -1,0 +1,52 @@
+/**
+ * Estilos para los iconos SVG
+ * Estos estilos reemplazan a los iconos de Font Awesome
+ */
+
+/* Estilos generales para los iconos SVG */
+.svg-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
+/* Tamaños específicos */
+.svg-icon-sm {
+  width: 0.875em;
+  height: 0.875em;
+}
+
+.svg-icon-lg {
+  width: 1.33em;
+  height: 1.33em;
+}
+
+.svg-icon-xl {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Estilos específicos para el botón flotante de WhatsApp */
+.floating-whatsapp .svg-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+/* Estilos para los iconos en los enlaces de WhatsApp */
+a[href*="wa.me"] .svg-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Asegurar que los iconos no se desplacen en dispositivos móviles */
+@media (max-width: 768px) {
+  a[href*="wa.me"] .svg-icon {
+    margin-right: 6px;
+  }
+}
