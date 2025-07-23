@@ -1,0 +1,16 @@
+{
+  "dns_records": [
+    {
+      "type": "CNAME",
+      "name": "consulta",
+      "content": "consultagratis.pages.dev",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "Subdominio para la landing page de consultas gratuitas"
+    }
+  ],
+  "instructions": {
+    "es": "Para configurar el dominio personalizado 'consulta.amarredeamorfuertes.com', debes agregar este registro CNAME en tu panel de Cloudflare. Asegúrate de que el proxy esté activado (nube naranja).",
+    "en": "To configure the custom domain 'consulta.amarredeamorfuertes.com', you need to add this CNAME record in your Cloudflare dashboard. Make sure the proxy is enabled (orange cloud)."
+  }
+}
