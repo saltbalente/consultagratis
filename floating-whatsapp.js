@@ -75,15 +75,21 @@ document.addEventListener('DOMContentLoaded', function() {
         if (scrollDirection === 'down') {
             floatingWhatsApp.classList.add('hidden');
             floatingWhatsApp.classList.remove('visible');
+            // Añadir animación de giro
+            floatingWhatsApp.classList.add('rotate');
         } else {
             floatingWhatsApp.classList.add('visible');
             floatingWhatsApp.classList.remove('hidden');
+            // Añadir animación de giro
+            floatingWhatsApp.classList.add('rotate');
         }
         
         // Restablecer el estado de animación después de un tiempo
         setTimeout(function() {
             isAnimating = false;
-        }, 300);
+            // Quitar la clase de rotación después de completar la animación
+            floatingWhatsApp.classList.remove('rotate');
+        }, 1000); // Aumentado a 1000ms para que coincida con la duración de la animación
     }
     
     // Optimizar el evento de scroll con debounce

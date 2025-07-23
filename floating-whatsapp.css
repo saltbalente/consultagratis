@@ -1,10 +1,10 @@
 /* Estilos para el botón flotante de WhatsApp */
 .floating-whatsapp {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px; /* Posición más arriba */
     right: 20px;
-    width: 60px;
-    height: 60px;
+    width: 70px; /* Más grande */
+    height: 70px; /* Más grande */
     background-color: #25D366;
     color: white;
     border-radius: 50%;
@@ -19,8 +19,9 @@
     opacity: 1;
 }
 
-.floating-whatsapp i {
-    font-size: 30px;
+.floating-whatsapp .svg-icon {
+    width: 40px; /* Icono más grande */
+    height: 40px; /* Icono más grande */
 }
 
 .floating-whatsapp:hover {
@@ -43,12 +44,26 @@
     animation: whatsapp-bounce 0.5s ease;
 }
 
+/* Animación de giro completo */
+.floating-whatsapp.rotate {
+    animation: whatsapp-rotate 1s ease;
+}
+
 @keyframes whatsapp-bounce {
     0%, 100% {
         transform: scale(1);
     }
     50% {
         transform: scale(1.2);
+    }
+}
+
+@keyframes whatsapp-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -76,14 +91,15 @@
 /* Responsive */
 @media (max-width: 768px) {
     .floating-whatsapp {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
+        width: 60px; /* Más grande que antes pero adaptado a móvil */
+        height: 60px; /* Más grande que antes pero adaptado a móvil */
+        bottom: 30px; /* Más arriba */
         right: 15px;
     }
     
-    .floating-whatsapp i {
-        font-size: 25px;
+    .floating-whatsapp .svg-icon {
+        width: 35px; /* Icono adaptado */
+        height: 35px; /* Icono adaptado */
     }
     
     .floating-whatsapp .tooltip {
