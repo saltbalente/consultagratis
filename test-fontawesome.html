@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Font Awesome</title>
+    <!-- Font Awesome desde CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Fix para Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-fix.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .icon-container {
+            margin: 20px;
+            font-size: 30px;
+        }
+        .icon-container i {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prueba de Font Awesome</h1>
+    
+    <div class="icon-container">
+        <i class="fab fa-whatsapp"></i>
+        <i class="fas fa-home"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-phone"></i>
+    </div>
+    
+    <p>Si puedes ver los iconos arriba, Font Awesome está funcionando correctamente.</p>
+    
+    <!-- Script para verificar Font Awesome -->
+    <script src="check-fontawesome.js"></script>
+</body>
+</html>
