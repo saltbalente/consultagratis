@@ -1,0 +1,19 @@
+{
+  "buildConfig": {
+    "buildCommand": null,
+    "destinationDir": ".",
+    "rootDir": "."
+  },
+  "deploymentConfigs": {
+    "production": {
+      "compatibility_date": "2025-07-23",
+      "compatibility_flags": [],
+      "env_vars": {}
+    },
+    "preview": {
+      "compatibility_date": "2025-07-23",
+      "compatibility_flags": [],
+      "env_vars": {}
+    }
+  }
+}

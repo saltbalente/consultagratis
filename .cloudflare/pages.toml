@@ -1,0 +1,18 @@
+# Configuración para Cloudflare Pages
+
+[build]
+  command = "" # No se requiere comando de compilación
+  publish = "/" # Directorio raíz
+  node_bundler = "esbuild" # Usar esbuild para mejor rendimiento
+
+[build.environment]
+  NODE_VERSION = "18.0.0"
+
+[site]
+  bucket = "./"
+
+[env.production]
+  NODE_ENV = "production"
+
+[env.preview]
+  NODE_ENV = "development"
